@@ -23,14 +23,14 @@ The website includes a messaging/forum system and an integrated account registry
 ## Project Structure
 
 /root
-├── templates
-├── data
-├── httpd.py -> python server
-└── www
-    ├── index.html
-    ├── css/
-    ├── js/
-    ├── picture/
+├── templates  
+├── data  
+├── httpd.py -> python server  
+└── www  
+    ├── index.html  
+    ├── css/  
+    ├── js/  
+    ├── picture/  
     └── htbin/ 
 
 
