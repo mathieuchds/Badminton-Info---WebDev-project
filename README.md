@@ -26,7 +26,7 @@ The website includes a messaging/forum system and an integrated account registry
 ├── templates  
 ├── data  
 ├── httpd.py -> python server  
-└── www 
+└── www  
     &nbsp;├── index.html  
     &nbsp;├── css/  
     &nbsp;├── js/  
