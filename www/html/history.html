@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr" xml:lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mathieu Chedas, Benoit Dajoux">
+    <meta name="keywords" content="badminton, html, français">
+    <meta name="description" content="Site d'information sur l'univers du badminton.">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/history.css">
+    <title>Badminton Info</title>
+    <link rel="icon" href="../picture/logo_site.png" type="image/icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="../js/progressbar.js" defer></script>
+    <script src="../js/menu_button.js" defer></script>
+    <script src="../js/accordion_menu.js" defer></script>
+    <script src="../js/table-of-content.js" defer></script>
+    <script src="../js/progress_menu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_box">
+            <a href="../index.html" class="main_logo_box"><img class="main_logo" src="../picture/logo_site.png" alt="Logo du site"></a>
+            
+            <div class="right-header-part">
+                <a href="login.html" class="main_logo_box"><img class="main_logo" src="../picture/logo_profil.png" alt="Acces login"></a>
+                
+                <div class="button_box">
+                    <button id="menuButton" class="button_box"><img class="main_logo" src="../picture/menu_icon.png" alt="Accès menu"></button>
+                </div>
+
+                    <div id="menuContent" class="phone_menu_content">
+                        <nav class="menu">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="history.html">Historique</a><img class="icon-accordion-header" src="../picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="history.html#section1.1">Introduction</a>
+                                        <a href="history.html#section1.2">Origines</a>
+                                        <a href="history.html#section1.3">Emergence</a>
+                                        <a href="history.html#section1.4">Arrivée aux J.O</a>
+                                        <a href="history.html#section1.5">Le badminton moderne</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="competition.html">Scène compétitive</a><img class="icon-accordion-header" src="../picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="competition.html#section2.1">Introduction</a>
+                                        <a href="competition.html#section2.2">Simple</a>
+                                        <a href="competition.html#section2.3">Double</a>
+                                        <a href="competition.html#section2.4">Mixte</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="forum.html">Notre expérience</a><img class="icon-accordion-header" src="../picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="forum.html#section3.1">Mathieu</a>
+                                        <a href="forum.html#section3.2">Benoit</a>
+                                        <a href="forum.html#section3.3">Votre experience</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                
+                
+                <nav class="menu">
+                    <ul>
+                        <li class="menu_box">
+                            <a href="history.html">Historique</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="history.html#section1.1">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.2">Origines</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.3">Emergence</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.4">Arrivée aux J.O</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.5">Le badminton moderne</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_box">
+                            <a href="competition.html">Scène compétitive</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="competition.html#section2.1">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="competition.html#section2.2">Simple</a>
+                                </li>
+                                <li>
+                                    <a href="competition.html#section2.3">Double</a>
+                                </li>
+                                <li>
+                                    <a href="competition.html#section2.4">Mixte</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_box">
+                            <a href="forum.html">Notre expérience</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="forum.html#section3.1">Mathieu</a>
+                                </li>
+                                <li>
+                                    <a href="forum.html#section3.2">Benoit</a>
+                                </li>
+                                <li>
+                                    <a href="forum.html#section3.3">Votre experience</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="nav_progress_bar"></div>
+
+    </header>
+
+    <main>
+        <div class="overlay" id="overlay"></div>
+        <div  class="article-main">
+            <div class="main-content">
+                <div class="banner"></div>
+                <article class="main-content-article">
+                    <h1>Histoire du Badminton</h1>
+                    
+                    <section class="article-section" id="section1.1">
+                        <p>Le badminton, un sport dynamique et gracieux qui captive les joueurs et les spectateurs du monde 
+                            entier, a des racines qui remontent à plusieurs siècles. Son histoire riche et fascinante 
+                            témoigne de son évolution depuis un simple jeu de volant pratiqué dans les cours royales et les 
+                            jardins aristocratiques jusqu'à devenir <strong>un sport olympique majeur</strong>, reconnu pour sa vitesse, sa 
+                            précision et sa stratégie. Originaire d'Inde, le badminton a connu une diffusion mondiale grâce 
+                            à la colonisation britannique et à <strong>sa popularité croissante</strong> dans les écoles et les clubs à travers 
+                            le monde. Aujourd'hui, il est pratiqué à tous les niveaux, du loisir à la compétition professionnelle,
+                            attirant <strong>des millions de passionnés</strong> qui apprécient ses défis physiques et mentaux ainsi que son 
+                            esprit de fair-play.</p>
+                    </section>
+
+                    <section class="article-section" id="section1.2">
+                    <h2>Origines</h2>
+                        <p>Les origines du badminton remontent à des jeux de volant pratiqués dans l'<strong>ancienne civilisation grecque</strong>
+                            et en Asie, mais c'est au 19e siècle que le sport moderne tel que nous le connaissons aujourd'hui a 
+                            commencé à prendre forme. Les premières traces de jeux similaires au badminton remontent à l'<strong>Inde</strong>
+                            ancienne, où le jeu de volant était pratiqué sous le nom de <span>Poona</span> ou <span>Poonah</span>. Ce jeu était souvent 
+                            joué dans les cours royales et les jardins aristocratiques, et il s'est progressivement répandu dans 
+                            d'autres parties du monde. </p>
+                        <p>L'essor du badminton moderne est largement attribué aux Britanniques. Pendant la <strong>colonisation 
+                            britannique de l'Inde</strong> au 19e siècle, les officiers militaires britanniques ont découvert le jeu de 
+                            Poona et l'ont ramené en Angleterre. C'est là que le jeu a commencé à être pratiqué de manière plus 
+                            organisée et réglementée. Le nom "badminton" est apparu en référence à la résidence du <strong>duc de Beaufort</strong>,
+                            <span>Badminton House</span>, où le jeu était populaire parmi les invités et les membres de la famille. 
+                            Les premières règles du badminton moderne ont été établies en Angleterre dans les années 1860. 
+                            Le jeu a été codifié et standardisé, avec des règles concernant le terrain, l'équipement et les 
+                            techniques de jeu. Les premiers clubs de badminton ont également été créés en Angleterre à cette 
+                            époque, et le sport a commencé à se répandre dans d'autres pays à travers le monde grâce aux voyages 
+                            et aux échanges culturels.</p>
+                            <figure class="history-fig">
+                                <img src="../picture/Le_Volant.jpg" alt="Le Volant, caricature dans Le Bon Genre en 1801">
+                                <figcaption>Le Volant, caricature dans Le Bon Genre en 1801</figcaption>
+                            </figure>
+                            
+                    </section>
+
+                    <section class="article-section" id="section1.3">
+                    <h2>Emergence</h2>
+                        <p>Au cours du 19e siècle, le badminton est devenu un sport populaire dans les écoles, les universités 
+                            et les clubs en Angleterre et dans d'autres pays européens. Des tournois et des compétitions ont été 
+                            organisés, attirant un nombre croissant de participants et de spectateurs. Le sport a continué à 
+                            évoluer et à se développer au cours des décennies suivantes, jusqu'à devenir finalement un <strong>sport 
+                            olympique officiel en 1992</strong>.</p>
+                        <p>L'émergence et à la popularité croissante de ce sport dynamique est étroitement liée à l'évolution 
+                            des raquettes de badminton. Au fur et à mesure que les matériaux et les techniques de fabrication 
+                            ont progressé au fil du temps, les raquettes ont suivi le même chemin, devenant plus légères, plus 
+                            rigides et plus puissantes. Cette évolution a permis aux joueurs d'<strong>exploiter pleinement leur potentiel
+                            athlétique et technique</strong>, en produisant des coups plus rapides, plus précis et plus puissants sur le 
+                            court de badminton.</p> 
+                        <p>Les premières raquettes en bois étaient rudimentaires et lourdes, mais elles ont fourni la base 
+                            nécessaire pour le développement du jeu de badminton. Au fur et à mesure que les matériaux composites
+                            ont été introduits, les raquettes sont devenues plus légères et plus maniables, ce qui a permis aux 
+                            joueurs d'adopter un style de jeu plus rapide et plus agressif. Les innovations dans le design des 
+                            raquettes, telles que les formes de tête de raquette optimisées et les profils de cadre affinés, 
+                            ont également contribué à améliorer la performance des joueurs sur le court.
+                            En parallèle, l'évolution des raquettes a également influencé la <strong>stratégie et la tactique</strong> du jeu 
+                            de badminton. Les joueurs ont pu développer de nouveaux coups et des combinaisons de coups plus 
+                            complexes grâce aux améliorations apportées aux raquettes. Les raquettes plus rigides et plus 
+                            puissantes ont permis aux joueurs de frapper le volant avec plus de force et de précision, tandis 
+                            que les raquettes plus légères ont facilité les mouvements rapides et les réactions rapides sur le 
+                            court.</p>
+                        <figure class="history-fig">
+                            <img src="../picture/modern_racket.jpg" alt="raquette moderne">
+                            <figcaption>Photo légendée d'une raquette de badminton moderne</figcaption>
+                        </figure>
+                    </section>
+
+                    <section class="article-section" id="section1.4">
+                    <h2>Arrivée aux Jeux Olympiques</h2>
+                        <p>L'introduction du badminton aux Jeux Olympiques représente un moment historique et significatif pour 
+                            le sport, marquant sa reconnaissance officielle et son statut en tant que discipline olympique 
+                            majeure. L'idée d'inclure le badminton dans les Jeux Olympiques remonte à plusieurs décennies avant 
+                            sa première apparition officielle. Les efforts pour faire du badminton une discipline olympique ont 
+                            été soutenus par des fédérations internationales, des joueurs éminents et des amateurs passionnés du 
+                            sport.
+
+                            Après des années de lobbying et de promotion du badminton en tant que sport compétitif de haut niveau,
+                            l'<strong>International Badminton Federation</strong>(maintenant la Badminton World Federation) a réussi à convaincre
+                            le Comité International Olympique d'accepter le badminton comme discipline olympique. C'est ainsi que
+                            le badminton a fait ses débuts officiels aux <strong>Jeux Olympiques d'été de 1992 à Barcelone</strong>, en Espagne. 
+                            Cette inclusion a été accueillie avec enthousiasme par la communauté mondiale du badminton et a ouvert
+                            de nouvelles opportunités pour les joueurs, les entraîneurs et les fans du sport.</p>
+                        <p>
+                            L'arrivée du badminton aux Jeux Olympiques a apporté une visibilité accrue au sport, attirant 
+                            l'attention des médias du monde entier et permettant aux meilleurs joueurs de démontrer leur talent 
+                            sur la scène olympique. Les compétitions de badminton aux Jeux Olympiques ont rapidement gagné en 
+                            popularité, offrant des moments de suspense, d'émotion et de spectacle pour les spectateurs du monde 
+                            entier. Les joueurs olympiques de badminton sont devenus des icônes sportives et des modèles pour les 
+                            jeunes aspirants du sport, inspirant une nouvelle génération de joueurs à atteindre l'excellence dans 
+                            leur discipline.
+                            
+                            Depuis son introduction aux Jeux Olympiques, le badminton a continué à évoluer et à se développer en 
+                            tant que sport mondial majeur. Les compétitions olympiques de badminton sont désormais parmi les 
+                            événements les plus attendus des Jeux Olympiques, attirant des joueurs de premier plan de tous les 
+                            continents pour rivaliser pour les médailles d'or, d'argent et de bronze. L'histoire du badminton 
+                            aux Jeux Olympiques est une histoire de succès, d'inspiration et de passion pour le sport, et son 
+                            inclusion dans le programme olympique continue à renforcer sa position en tant que l'un des sports 
+                            les plus appréciés et respectés au monde.</p>
+                        <figure class="history-fig">
+                            <img src="../picture/competition.jpg" alt="Match opposant J.Anjo à S.Axelsen durant les championnats du monde 2019">
+                            <figcaption>Match opposant J.Anjo à S.Axelsen durant les championnats du monde 2019</figcaption>
+                        </figure>
+                    </section>
+
+                    <section class="article-section" id="section1.5">
+                    <h2>Le badminton moderne</h2>
+                        <p>De nos jours, le badminton continue à se développer et à se moderniser, attirant de nouveaux talents 
+                            et innovant dans tous les aspects du jeu, des techniques de jeu aux équipements utilisés. Son 
+                            accessibilité et sa polyvalence en font un sport apprécié par des millions de personnes de tous âges 
+                            et de tous niveaux de compétence à travers le globe. Actuellement, plusieurs tournois de badminton sont 
+                            considérés comme parmi les plus populaires et les plus prestigieux dans le monde du badminton professionnel:</p>
+                        <ul class="article-info">
+                            <li> <strong>Championnats du Monde de Badminton :</strong>  Ils sont organisés par la Fédération mondiale de 
+                                badminton (BWF), ont lieu tous les deux ans et attirent les meilleurs joueurs et joueuses du monde entier.</li>
+                            <li><strong>Super Series :</strong> Super Series de badminton sont une série de tournois prestigieux 
+                                rassemblant les meilleurs joueurs du monde, offrant un niveau de compétition élevé et des 
+                                affrontements captivants sur le court.</li>
+                            <li><strong>Tournois du BWF World Tour :</strong> Le BWF 
+                                World Tour est une série de tournois de badminton organisés par la BWF tout au long de l'année. 
+                                Ils comprennent des tournois de différents niveaux, allant des tournois de niveau inférieur aux 
+                                tournois Super 1000, qui offrent le plus grand nombre de points et de prix.</li>
+                            <li><strong>Championnats d'Europe de Badminton :</strong> C'est une compétition annuelle passionnante 
+                                où les meilleurs joueurs européens se disputent la victoire dans différentes disciplines.</li>
+                        </ul>
+
+                        <figure class="history-fig" id="bottom-page">
+                            <img src="../picture/france.jpg" alt="Equipe de France de badminton durant la Thomas Cup 2022" class="history">
+                            <figcaption>Equipe de France de badminton durant la Thomas Cup 2022</figcaption>
+                        </figure>
+                    </section>
+                </article>
+            </div>
+
+            <div class="right-sidebar" id="right-sidebar">
+                <nav class="table-of-contents">
+                <h2>Sommaire</h2>
+                <ul>
+                    <li><a href="#section1.1">Introduction</a><p>En janvier 2022, la Fédération Française de Badminton 
+                                                                (FFBaD) comptait environ 190 000 licenciés en France et la Fédération 
+                                                                Internationale de Badminton (BWF) en recensait plus de 100 millions.</p>
+                    </li>
+                    <li><a href="#section1.2">Origines</a><p>Badminton House est une grande demeure située dans le Gloucestershire, 
+                                                            en Angleterre. Il s'agit d'une résidence historique appartenant à la 
+                                                            famille aristocratique des ducs de Beaufort depuis le XVIIe siècle.</p>
+                    </li>
+                    <li><a href="#section1.3">Emergence</a><p>Les raquettes de badminton modernes sont généralement fabriquées en 
+                                                            utilisant une combinaison de matériaux légers et rigides. Les matériaux 
+                                                            principalement utilisés dans leur fabrication modernes comprennent du 
+                                                            graphite, du carbone, de l'aluminium et du titane.</p>
+                    </li>
+                    <li><a href="#section1.4">Arrivée aux Jeux Olympiques</a><p>les médaillés d'or en badminton pour cette édition 
+                                                                            étaient Alan Budikusuma (Indonésie) chez les hommes et 
+                                                                            Susi Susanti (Indonésie) chez les femmes.</p>
+                    </li>
+                    <li><a href="#section1.5">Le badminton moderne</a><p>La Thomas Cup est le championnat du monde par équipes 
+                                                                        masculines de badminton et est organisée par la Fédération 
+                                                                        mondiale de badminton (BWF). Elle a été inaugurée 
+                                                                        en 1949 par Sir George Alan Thomas, un joueur de badminton 
+                                                                        britannique, et elle porte son nom en son honneur. Elle a 
+                                                                        lieu tous les deux ans, en alternance avec la Uber Cup.</p>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    <div class="transi_box" id="history-transibox"></div> 
+    </main>
+
+    <footer>
+        <div class="footer-dark">
+            <div class="item text">
+                <h3>A propos</h3>
+                <p>
+                Badminton Info est votre source d'informations fiables sur le monde du badminton. Découvrez les dernières 
+                actualités, conseils, et ressources pour améliorer votre jeu.
+                </p>
+            </div>
+            <div class="item text">
+                <h3>Contact</h3>
+                <p>mathieu.chedas@etu.uca.fr & benoit.dajoux@etu.uca.fr</p>
+            </div>
+            <div class="item text"  >
+                <h3>Rejoignez la communauté FFBad</h3>
+                <div class="icon_box">
+                    <a href="https://www.facebook.com/FederationFrancaiseBadminton/?locale=fr_FR"><img class="social_media_icon" src="../picture/facebook_logo.png" alt="Lien vers la page Facebook de la FFBad"></a>
+                    <a href="https://www.instagram.com/ffbad/?hl=fr"><img class="social_media_icon" src="../picture/instagram_logo.png" alt="Lien vers la page Instagram de la FFBad"></a>
+                    <a href="https://twitter.com/FFBaD?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="social_media_icon" src="../picture/x_logo2.png" alt="Lien vers la page X de la FFBad"></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Badminton Info. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mathieu Chedas, Benoit Dajoux">
+    <meta name="keywords" content="badminton, html, français">
+    <meta name="description" content="Site d'information sur l'univers du badminton.">
+    <link rel="icon" href="../picture/logo_site.png" type="image/icon">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/history.css">
+    <link rel="stylesheet" href="../css/forum.css">
+    <title>Badminton Info</title>
+    <script src="../js/progressbar.js" defer></script>
+    <script src="../js/accordion_menu.js" defer></script>
+    <script src="../js/menu_button.js" defer></script>
+    <script src="../js/jquery-3.7.1.js" defer></script>
+    <script src="../js/table-of-content.js" defer></script>
+    <script src="../js/progress_menu.js" defer></script>
+    <script src="../js/forum.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header_box">
+            <a href="../index.html" class="main_logo_box"><img class="main_logo" src="../picture/logo_site.png" alt="Logo du site"></a>
+            
+            <div class="right-header-part">
+                <a href="login.html" class="main_logo_box"><img class="main_logo" src="../picture/logo_profil.png" alt="Acces login"></a>
+                
+                <div class="button_box">
+                    <button id="menuButton" class="button_box"><img class="main_logo" src="../picture/menu_icon.png" alt="Accès menu"></button>
+                </div>
+
+                    <div id="menuContent" class="phone_menu_content">
+                        <nav class="menu">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="history.html">Historique</a><img class="icon-accordion-header" src="../picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="history.html#section1.1">Introduction</a>
+                                        <a href="history.html#section1.2">Origines</a>
+                                        <a href="history.html#section1.3">Emergence</a>
+                                        <a href="history.html#section1.4">Arrivée aux J.O</a>
+                                        <a href="history.html#section1.5">Le badminton moderne</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="competition.html">Scène compétitive</a><img class="icon-accordion-header" src="../picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="competition.html#section2.1">Introduction</a>
+                                        <a href="competition.html#section2.2">Simple</a>
+                                        <a href="competition.html#section2.3">Double</a>
+                                        <a href="competition.html#section2.4">Mixte</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="forum.html">Notre expérience</a><img class="icon-accordion-header" src="../picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="forum.html#section3.1">Mathieu</a>
+                                        <a href="forum.html#section3.2">Benoit</a>
+                                        <a href="forum.html#section3.3">Votre experience</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                
+                
+                <nav class="menu">
+                    <ul>
+                        <li class="menu_box">
+                            <a href="history.html">Historique</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="history.html#section1.1">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.2">Origines</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.3">Emergence</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.4">Arrivée aux J.O</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.5">Le badminton moderne</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_box">
+                            <a href="competition.html">Scène compétitive</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="competition.html#section2.1">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="competition.html#section2.2">Simple</a>
+                                </li>
+                                <li>
+                                    <a href="competition.html#section2.3">Double</a>
+                                </li>
+                                <li>
+                                    <a href="competition.html#section2.4">Mixte</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_box">
+                            <a href="forum.html">Notre expérience</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="forum.html#section3.1">Mathieu</a>
+                                </li>
+                                <li>
+                                    <a href="forum.html#section3.2">Benoit</a>
+                                </li>
+                                <li>
+                                    <a href="forum.html#section3.3">Votre experience</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="nav_progress_bar"></div>
+
+    </header>
+    
+    <main>
+        <div class="article-main">
+            <div class="main-content">
+                <div class="banner"></div>
+                <article class="main-content-article">
+                    <h1>Expérience et partage</h1>
+                    <p class="introduction">Cet espace est dédié au partage de nos expériences et de nos histoires vis à vis du badminton. Il vous permet 
+                    d'échanger sur vos expérience, de donner des conseils, ou de rencontrer d'autres passionnés de badminton. Alors 
+                    n'hésitez pas ! Vous trouverez également une rapide présentation de nos profils de joueurs.
+                    </p>
+                    <section class="article-section" id="section3.1">
+                        <h3>Mon expérience : Mathieu Chedas</h3>
+                        <p> Je m'appelle Mathieu Chedas, et je suis passionné de badminton depuis mon adolescence. Cette passion a 
+                            commencé dès la sixième, lorsque l'une de mes anciennes amies m'a fait découvrir ce sport. Nous avons 
+                            commencé à pratiquer ensemble au club de l'USI Issoire, et cela est devenu une habitude pendant toute la 
+                            durée de mon collège et de mon lycée. Malheureusement, j'ai dû faire une pause en milieu de cinquième 
+                            année en raison de problèmes de santé, mais j'ai repris dès que possible.</p>
+                        <p> Plus tard, j'ai dû quitter mon club d'Issoire pour poursuivre mes études à Clermont. Cependant, cette 
+                            passion pour le badminton ne m'a pas quitté. Cette année, j'ai eu la chance d'intégrer un nouveau club, 
+                            le Club Clermontois du CUC. Je m'y suis rapidement senti à l'aise et heureux de retrouver cette ambiance 
+                            sportive qui me manquait tant. Au Club Clermontois du CUC, je pratique le badminton à un rythme d'un 
+                            entraînement par semaine.</p>
+                        <p> Ce sport m'a permis de faire de nouvelles rencontres et m'aide à me défouler. Il me permet également de 
+                            maintenir une bonne forme physique et de m'évader du rythme effréné des cours. Le badminton est bien plus 
+                            qu'un simple loisir pour moi, c'est un véritable mode de vie qui m'apporte équilibre et bonheur au quotidien.</p>
+                    </section>
+                    <section class="article-section" id="section3.2">
+                        <h3>Mon expérience : Benoit Dajoux</h3>
+                        <p>
+                            Je m'apelle Benoit Dajoux, et je fais du badminton depuis 2017, j'était alors en 5ème lorsqu'un ami m'a fait découvrir ce sport, que j'aimais déjà pratiquer en cours d'EPS au collège.
+                            J'ai alors pris une licence au <a href="https://club-badminton-bourbon-lancy.webador.fr">CBBL</a> (Club de Baminton de Bourbon-Lancy) ou j'ai fait plusieurs competitions qui m'ont
+                            permis d'atteindre le classement D9 en Simple, D8 en Double, et P10 en Mixte.
+                        </p>
+                        <p>
+                            J'ai du par la suite emménager a Clermont pour mes études, je suis malgré tout resté licencié au CBBL, tout en prenant une "double licence" au 
+                            <a href="https://www.cucbadminton.com">CUC Badminton</a> (Clermont Université Club Badminton), club qui me permet de m'entrainer la semaine
+                            dans leurs infrastructures 2 à 3 fois par semaine, tout en défendant mes couleurs originelle que sont celle du CBBL lors des compétitions. 
+                            Je me suis rapidement intégré et j'ai découvert un état d'esprit différent dans ce club de grande ville, comparé à l'état d'esprit de mon club de "Campagne".
+                        </p>
+                        <p>
+                            Ce sport m'a permis de faire de nouvelles rencontres, tout en maintenant une bonne forme physique malgré le rythme de cours assez chargé, ce qui fait que 
+                            c'est devenue plus qu'un simple loisirs, c'est devenue un mode de vie.
+                        </p>
+                    </section>
+                    <section class="article-section" id="section3.3">
+                        <h2>Partagez nous votre expérience !</h2>
+                        <form id="form" action="../htbin/chatsend.py" method="post" class="article-section">
+                            <div class="forum-head">
+                                <input type="text" id="msg-area" name="msg" placeholder="Entrez votre message">
+                                <div class="send-button-box">
+                                    <button class="send-button" type="submit"><img class="main_logo" src="../picture/send.png" alt="Envoyer un message"></button>
+                                </div>
+                            </div>
+                            <div id="out"></div>
+                        </form>
+                        <div id="output"></div>
+                    </section>
+                </article>
+                <div id="bottom-page"></div>
+            </div>
+            <div class="right-sidebar" id="right-sidebar">
+                <nav class="table-of-contents">
+                <h2>Sommaire</h2>
+                <ul>
+                    <li><a href="#section3.1">Mon expérience : Mathieu Chedas</a><p>
+                                                                                Mes clubs : <br><a href="https://usissoirebadminton.fr/" class="club-link">USI Issoire Badminton</a>
+                                                                                            <a href="https://www.cucbadminton.com/" class="club-link">CUC Badminton</a>
+                                                                                </p>
+                    </li>
+                    <li><a href="#section3.2">Mon expérience : Benoit Dajoux</a><p>
+                                                                                Mes clubs : <br><a href="https://club-badminton-bourbon-lancy.webador.fr" class="club-link">CBBL</a>
+                                                                                            <a href="https://www.cucbadminton.com/" class="club-link">CUC Badminton</a>
+                                                                                </p>
+                    </li>
+                    <li><a href="#form">Forum</a><p>Partagez nous votre expérience !</p>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="transi_box"></div> 
+    </main>
+    <footer>
+        <div class="footer-dark">
+            <div class="item text">
+                <h3>A propos</h3>
+                <p>
+                Badminton Info est votre source d'informations fiables sur le monde du badminton. Découvrez les dernières 
+                actualités, conseils, et ressources pour améliorer votre jeu.
+                </p>
+            </div>
+            <div class="item text">
+                <h3>Contact</h3>
+                <p>mathieu.chedas@etu.uca.fr & benoit.dajoux@etu.uca.fr</p>
+            </div>
+            <div class="item text"  >
+                <h3>Rejoignez la communauté FFBad</h3>
+                <div class="icon_box">
+                    <a href="https://www.facebook.com/FederationFrancaiseBadminton/?locale=fr_FR"><img class="social_media_icon" src="../picture/facebook_logo.png" alt="Lien vers la page Facebook de la FFBad"></a>
+                    <a href="https://www.instagram.com/ffbad/?hl=fr"><img class="social_media_icon" src="../picture/instagram_logo.png" alt="Lien vers la page Instagram de la FFBad"></a>
+                    <a href="https://twitter.com/FFBaD?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="social_media_icon" src="../picture/x_logo2.png" alt="Lien vers la page X de la FFBad"></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Badminton Info. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

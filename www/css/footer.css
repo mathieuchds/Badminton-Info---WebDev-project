@@ -1,0 +1,121 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Box séparation footer +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.transi_box { /* Bande de séparation main/footer */
+    background-color: #e3e3d9;
+    padding: 1em;
+    position: relative;
+    width: auto;
+}
+
+@media screen and (orientation : portrait){
+    .transi_box {
+        padding: 0.5em;
+    }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Footer +++++++++++++++++++++++++++++++++++++++++++++++++ */
+footer { /* Placement footer */
+    position: relative;
+    z-index: 1;
+}
+
+.footer-dark { /* Style principal footer */
+    padding:1.5em 0;
+    background-color:#282d32;
+    color: #ffffff;
+    font-family: Roboto;
+}
+
+@media screen and (orientation : portrait){
+    .footer-dark {
+        padding:1em 0;
+        position: relative;
+    }
+}
+
+.footer-dark h3 { /* Sous-titres footer */
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:1em;
+}
+
+@media screen and (orientation : portrait){
+    .footer-dark h3 {
+        font-size: 0.9em;
+    }
+}
+
+.footer-dark .item { /* Texte footer */
+    text-align:center;
+    padding-bottom:20px;
+    margin-bottom:36px;
+}
+
+@media screen and (orientation : portrait){
+    .footer-dark .item { 
+        padding-bottom:10px;
+        margin-bottom:10px;
+    }
+}
+
+.footer-dark .item.text p { /* Paragraphe footer */
+    opacity:0.6;
+    margin-bottom:0;
+    font-size: 0.9em;
+    margin-top:0;
+    font-weight:bold;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (orientation : portrait){
+    .footer-dark .item.text p {
+        font-size: 0.7em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.footer-dark .copyright { /* Style copyright */
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:0.8em;
+    margin-bottom:0;
+}
+
+@media screen and (orientation : portrait){
+    .footer-dark .copyright {
+        font-size:0.6em;
+        padding-top:0;
+    }
+}
+
+ /* +++++++++++++++++++++++++++++++++++++++++++++++++ Icon réseaux sociaux +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.footer-dark .icon_box { /* Box pour icon réseaux sociaux */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.social_media_icon { /* Gestion icon réseaux*/
+    width: 100px;;
+    height:32%;
+    display:flex;
+    text-align:center;
+    opacity:0.75;
+}
+
+@media screen and (orientation : portrait){
+    .social_media_icon {
+        width: 65px;;
+        height:32%;
+        display:flex;
+        text-align:center;
+        opacity:0.75;
+    }
+}

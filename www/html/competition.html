@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mathieu Chedas, Benoit Dajoux">
+    <meta name="keywords" content="badminton, html, français">
+    <meta name="description" content="Site d'information sur l'univers du badminton.">
+    <link rel="icon" href="../picture/logo_site.png" type="image/icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/history.css">
+    <link rel="stylesheet" href="../css/competition.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Badminton Info</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="../js/progressbar.js" defer></script>
+    <script src="../js/menu_button.js" defer></script>
+    <script src="../js/progress_menu.js" defer></script>
+    <script src="../js/accordion_menu.js" defer></script>
+    <script src="../js/table-of-content.js" defer></script>
+    <script src="../js/progress_menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header_box">
+            <a href="../index.html" class="main_logo_box"><img class="main_logo" src="../picture/logo_site.png" alt="Logo du site"></a>
+            
+            <div class="right-header-part">
+                <a href="login.html" class="main_logo_box"><img class="main_logo" src="../picture/logo_profil.png" alt="Acces login"></a>
+                
+                <div class="button_box">
+                    <button id="menuButton" class="button_box"><img class="main_logo" src="../picture/menu_icon.png" alt="Accès menu"></button>
+                </div>
+
+                    <div id="menuContent" class="phone_menu_content">
+                        <nav class="menu">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="history.html">Historique</a><img class="icon-accordion-header" src="../picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="history.html#section1.1">Introduction</a>
+                                        <a href="history.html#section1.2">Origines</a>
+                                        <a href="history.html#section1.3">Emergence</a>
+                                        <a href="history.html#section1.4">Arrivée aux J.O</a>
+                                        <a href="history.html#section1.5">Le badminton moderne</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="competition.html">Scène compétitive</a><img class="icon-accordion-header" src="../picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="competition.html#section2.1">Introduction</a>
+                                        <a href="competition.html#section2.2">Simple</a>
+                                        <a href="competition.html#section2.3">Double</a>
+                                        <a href="competition.html#section2.4">Mixte</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="forum.html">Notre expérience</a><img class="icon-accordion-header" src="../picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="forum.html#section3.1">Mathieu</a>
+                                        <a href="forum.html#section3.2">Benoit</a>
+                                        <a href="forum.html#section3.3">Votre experience</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                
+                
+                <nav class="menu">
+                    <ul>
+                        <li class="menu_box">
+                            <a href="history.html">Historique</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="history.html#section1.1">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.2">Origines</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.3">Emergence</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.4">Arrivée aux J.O</a>
+                                </li>
+                                <li>
+                                    <a href="history.html#section1.5">Le badminton moderne</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_box">
+                            <a href="competition.html">Scène compétitive</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="competition.html#section2.1">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="competition.html#section2.2">Simple</a>
+                                </li>
+                                <li>
+                                    <a href="competition.html#section2.3">Double</a>
+                                </li>
+                                <li>
+                                    <a href="competition.html#section2.4">Mixte</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_box">
+                            <a href="forum.html">Notre expérience</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="forum.html#section3.1">Mathieu</a>
+                                </li>
+                                <li>
+                                    <a href="forum.html#section3.2">Benoit</a>
+                                </li>
+                                <li>
+                                    <a href="forum.html#section3.3">Votre experience</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="nav_progress_bar"></div>
+
+    </header>
+
+    <main>
+        <div class="article-main">
+            <div class="main-content">
+                <div class="banner"></div>
+                <article class="main-content-article">
+                    <h1>Compétitions</h1>
+                    <section class="article-section" id="section2.1">
+                        <p>Plongez dans le système de classement en France, qui permet de suivre la progression des joueurs à travers 
+                            différents critères et catégories. Les classements vont de N1 (le plus haut niveau) à P12 (le niveau de 
+                            débutant). Ce système offre une vue d'ensemble de la performance des joueurs et favorise une compétition 
+                            saine et motivante à tous les niveaux.</p>
+                    
+                        <div class="tableau landscape-only">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Classement</th>
+                                        <th class="National-color">N1</th>
+                                        <th class="National-color">N2 </th>
+                                        <th class="National-color">N3</th>
+                                        <th class="Regional-color">R4</th>
+                                        <th class="Regional-color">R5</th>
+                                        <th class="Regional-color">R6</th>
+                                        <th class="Departemental-color">D7</th>
+                                        <th class="Departemental-color">D8</th>
+                                        <th class="Departemental-color">D9</th>
+                                        <th class="Promotion-color">P10</th>
+                                        <th class="Promotion-color">P11</th>
+                                        <th class="Promotion-color">P12</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Proportion cumulée pour prétendre au classement</td>
+                                        <td>0,2% </td>
+                                        <td>0,6% </td>
+                                        <td>1,4%</td>
+                                        <td>2,4%</td>
+                                        <td>4%</td>
+                                        <td>6,6%</td>
+                                        <td>10%</td>
+                                        <td>15,5%</td>
+                                        <td>30%</td>
+                                        <td>45%</td>
+                                        <td>70%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr >
+                                        <td>Nombre de joueurs par classement pour 500 compétiteurs</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>8</td>
+                                        <td>13</td>
+                                        <td>17</td>
+                                        <td>27,5</td>
+                                        <td>72,5</td>
+                                        <td>75</td>
+                                        <td>125</td>
+                                        <td>150</td>
+                                    </tr>
+                                    <tr >
+                                        <td>Rang pour prétendre au classement pour 500 compétiteurs</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                        <td>7</td>
+                                        <td>12</td>
+                                        <td>20</td>
+                                        <td>33</td>
+                                        <td>50</td>
+                                        <td>77</td>
+                                        <td>150</td>
+                                        <td>225</td>
+                                        <td>350</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seuil points simple hommes</td>
+                                        <td>3146,54</td>
+                                        <td>1174,21</td>
+                                        <td>384,81</td>
+                                        <td>181,99</td>
+                                        <td>82,35</td>
+                                        <td>37,01</td>
+                                        <td>19,71</td>
+                                        <td>11,89</td>
+                                        <td>6,75</td>
+                                        <td>3</td>
+                                        <td>0,66</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seuil points simple dames</td>
+                                        <td>6000</td>
+                                        <td>2739,5</td>
+                                        <td>1000</td>
+                                        <td>510,14</td>
+                                        <td>244,69</td>
+                                        <td>108,84</td>
+                                        <td>48,29</td>
+                                        <td>20,16</td>
+                                        <td>7,72</td>
+                                        <td>3,31</td>
+                                        <td>0,67</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seuil points double hommes</td>
+                                        <td>2972,2</td>
+                                        <td>1035,89</td>
+                                        <td>454,2</td>
+                                        <td>228,49</td>
+                                        <td>111,02</td>
+                                        <td>47,33</td>
+                                        <td>23,63</td>
+                                        <td>13,13</td>
+                                        <td>7,5</td>
+                                        <td>3</td>
+                                        <td>0,5</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seuil points double dames</td>
+                                        <td>9222,1</td>
+                                        <td>5491,61</td>
+                                        <td>2776,02</td>
+                                        <td>1600</td>
+                                        <td>760,88</td>
+                                        <td>304,52</td>
+                                        <td>125,37</td>
+                                        <td>40,77</td>
+                                        <td>10,3</td>
+                                        <td>4,67</td>
+                                        <td>0,54</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seuil points double mixte</td>
+                                        <td>3489,22</td>
+                                        <td>1646,89</td>
+                                        <td>799,68</td>
+                                        <td>407,8</td>
+                                        <td>190,64</td>
+                                        <td>69,73</td>
+                                        <td>27,68</td>
+                                        <td>12,43</td>
+                                        <td>5,25</td>
+                                        <td>2,16</td>
+                                        <td>0,38</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tableau phone">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Classement</th>
+                                        <th>Proportion cumulée pour prétendre au classement</th>
+                                        <th>Nombre de joueurs par classement pour 500 compétiteurs</th>
+                                        <th>Rang pour prétendre au classement pour 500 compétiteurs</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="National-color">N1</td>
+                                        <td>0,2% </td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="National-color">N2 </td>
+                                        <td>0,6% </td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="National-color">N3</td>
+                                        <td>1,4%</td>
+                                        <td>4</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Regional-color">R4</td>
+                                        <td>2,4%</td>
+                                        <td>5</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Regional-color">R5</td>
+                                        <td>4%</td>
+                                        <td>8</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Regional-color">R6</td>
+                                        <td>6,6%</td>
+                                        <td>13</td>
+                                        <td>33</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Departemental-color">D7</td>
+                                        <td>10%</td>
+                                        <td>17</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Departemental-color">D8</td>
+                                        <td>15,5%</td>
+                                        <td>27,5</td>
+                                        <td>77</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Departemental-color">D9</td>
+                                        <td>30%</td>
+                                        <td>72,5</td>
+                                        <td>150</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Promotion-color">P10</td>
+                                        <td>45%</td>
+                                        <td>75</td>
+                                        <td>225</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Promotion-color">P11</td>
+                                        <td>70%</td>
+                                        <td>125</td>
+                                        <td>350</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Promotion-color">P12</td>
+                                        <td>100%</td>
+                                        <td>150</td>
+                                        <td>500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="article-section" id="section2.2">
+                        <p>Vous retrouvez ici les Top 10 des classements internationaux dans chaque catégorie, Hommes, Femmes, en simple, double ou mixte. 
+                            Que vous soyez un passionné de ce sport palpitant ou simplement intéressé par les performances des athlètes de haut niveau, 
+                            notre plateforme vous offre un accès privilégié à des données actualisées régulièrement. Explorez nos tableaux détaillés pour 
+                            découvrir qui domine actuellement le classement en simple, double et mixte. Nous mettons à jour nos classements dès que de nouvelles 
+                            informations sont disponibles, vous permettant ainsi de suivre de près l'évolution des positions des joueurs dans la hiérarchie 
+                            mondiale du badminton.
+                        </p>
+                        <h2>Simple</h2>
+                        <p>Le badminton en simple est une discipline exigeante et stimulante qui met en lumière l'agilité, la vitesse 
+                            et la stratégie d'un joueur individuel sur le court. Dans cette forme de compétition, un joueur affronte 
+                            un seul adversaire dans un duel intense où chaque mouvement compte. Le badminton en simple exige un 
+                            mélange unique de compétences techniques, de condition physique et de capacité mentale pour réussir.
+                            La dynamique du badminton en simple repose sur la capacité du joueur à se déplacer rapidement sur le terrain, 
+                            à anticiper les coups de son adversaire et à prendre des décisions rapides pour contrôler le jeu. 
+                            Chaque échange est une bataille d'endurance et de réflexes, où la précision et la puissance des coups 
+                            jouent un rôle crucial dans la recherche de l'avantage sur l'adversaire.
+                            L'un des aspects les plus captivants du badminton en simple est la variété des coups et des tactiques 
+                            utilisés par les joueurs pour prendre l'ascendant dans le match. Des tirs smash puissants aux amortis 
+                            subtils, en passant par les déplacements habiles et les changements de rythme, les joueurs doivent être 
+                            polyvalents et capables de s'adapter à différentes situations de jeu pour réussir.
+                            Outre les compétences techniques, la condition physique joue un rôle majeur dans le badminton en simple. 
+                            Les joueurs doivent être rapides sur leurs pieds, avoir une bonne endurance et être capables de récupérer 
+                            rapidement entre les échanges pour maintenir un niveau de performance élevé tout au long du match.
+                            Enfin, la capacité mentale est également cruciale dans le badminton en simple. Les joueurs doivent rester 
+                            concentrés, garder leur sang-froid sous la pression et rester stratégiques dans leurs décisions pour tirer 
+                            parti des faiblesses de leur adversaire tout en minimisant les leurs.
+                        </p>
+                        <div class="tableau">
+                            <h3>Top 10 Simple Homme:</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Classement</th>
+                                        <th>Joueur</th>
+                                        <th>Nationalié</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Viktor AXELSEN</td>
+                                        <td>Danemark</td>
+                                        <td>98 715</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>SHI Yu Qi</td>
+                                        <td>Chine</td>
+                                        <td>90 984</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Anthony Sinisuka GINTING</td>
+                                        <td>Indonésie</td>
+                                        <td>85 101</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Anders ANTONSEN</td>
+                                        <td>Danemark</td>
+                                        <td>83 594</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Jonatan CHRISTIE</td>
+                                        <td>Indonésie</td>
+                                        <td>81 531</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Kodai NARAOKA</td>
+                                        <td>Japon</td>
+                                        <td>81 015</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Li Shi Feng</td>
+                                        <td>Chine</td>
+                                        <td>77 998</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Kunlavut VITIDSARN</td>
+                                        <td>Thaïlande</td>
+                                        <td>77 948</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>PRANNOY H. S.</td>
+                                        <td>Inde</td>
+                                        <td>77 647</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>LEE Zii Jia</td>
+                                        <td>Malaisie</td>
+                                        <td>68 296</td>
+                                    </tr>
+                                </tbody>
+                            </table>      
+                            
+                            <h3>Top 10 Simple Dame:</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Classement</th>
+                                        <th>Joueuse</th>
+                                        <th>Nationalié</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>AN Se Young</td>
+                                        <td>Corée du Sud</td>
+                                        <td>112 314</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>CHEN Yu Fei</td>
+                                        <td>Chine</td>
+                                        <td>100 796</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>TAI Tzu Ying</td>
+                                        <td>Taiwan</td>
+                                        <td>97 036</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Akane YAMAGUCHI</td>
+                                        <td>Japon</td>
+                                        <td>95 317</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Carolina MARIN</td>
+                                        <td>Espagne</td>
+                                        <td>90 006</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>HE Bing Jiao</td>
+                                        <td>Chine</td>
+                                        <td>74 474</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>HAN Yue</td>
+                                        <td>Chine</td>
+                                        <td>73 136</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Gregoria Mariska TUNJUNG</td>
+                                        <td>Indonésie</td>
+                                        <td>72 800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>WANG Zhi Yi</td>
+                                        <td>Chine</td>
+                                        <td>69 748</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Beiwen ZHANG</td>
+                                        <td>États-Unis</td>
+                                        <td>67 506</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="article-section" id="section2.3">
+                        <h2>Double</h2>
+                        <p>Le badminton en double est une discipline exaltante et dynamique qui met en avant la collaboration, la 
+                            coordination et la stratégie entre deux partenaires sur le terrain.
+                            Dans un match de badminton en double, chaque équipe est composée de deux joueurs, positionnés de part et 
+                            d'autre du filet. La communication et la synchronisation entre les partenaires sont essentielles pour 
+                            anticiper les mouvements de l'adversaire et répondre efficacement aux échanges. De plus, une bonne 
+                            compréhension des rôles et des responsabilités de chaque joueur sur le terrain est cruciale pour maximiser 
+                            les chances de succès.
+                            L'un des aspects les plus captivants du badminton en double est la rapidité des échanges, avec les joueurs 
+                            se déplaçant fréquemment d'un bout à l'autre du terrain pour renvoyer le volant avec précision et puissance.
+                            La coordination des mouvements, la couverture du terrain et la capacité à trouver les espaces vides sont 
+                            des compétences clés pour dominer le jeu en double.
+                            En fin de compte, le badminton en double offre une expérience de jeu palpitante et stimulante, où l'esprit 
+                            d'équipe, la compétitivité et le plaisir se combinent pour créer des moments inoubliables sur le terrain. 
+                            Que ce soit pour le plaisir de jouer entre amis ou pour rivaliser à un niveau compétitif, le badminton en 
+                            double offre une expérience sportive riche et gratifiante pour tous les passionnés de ce sport dynamique.
+                        </p>
+                        <div class="tableau">
+                            <h3>Top 10 Double Homme:</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Classement</th>
+                                        <th>Joueurs</th>
+                                        <th>Nationalié</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Satwiksairaj RANKIREDDY<br>Chirag SHETTY</td>
+                                        <td>Indonésie</td>
+                                        <td>102 303</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>KANG Min Hyuk<br>SEO Seung Jae</td>
+                                        <td>Corée du Sud</td>
+                                        <td>97 261</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>LIANG Wei Keng<br>WANG Chang</td>
+                                        <td>Chine</td>
+                                        <td>97 036</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Kim ASTRUP<br>Anders Skaarup RASMUSSEN</td>
+                                        <td>Danemark</td>
+                                        <td>91 024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Aaron CHIA<br>SOH Wooi Yik</td>
+                                        <td>Malaisie</td>
+                                        <td>90 664</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Takuro HOKI<br>Yugo KOBAYASHI</td>
+                                        <td>Japon</td>
+                                        <td>85 581</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Fajar ALFIAN<br>Muhammad Rian ARDIANTO</td>
+                                        <td>Indonésie</td>
+                                        <td>80 329</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>LIU Yu Chen<br>OU Xuan Yi</td>
+                                        <td>Chine</td>
+                                        <td>74 458</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Muhammad Shohibul FIKRI<br>Bagas MAULANA</td>
+                                        <td>Indonésie</td>
+                                        <td>72 829</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>LEE Yang<br>WANG Chi-Lin</td>
+                                        <td>Taiwan</td>
+                                        <td>72 808</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h3>Top 10 Double Dame:</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Classement</th>
+                                        <th>Joueuses</th>
+                                        <th>Nationalié</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CHEN Qing Chen<br>JIA Yi Fan</td>
+                                        <td>Chine</td>
+                                        <td>111 954</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>BAEK Ha Na<br>LEE So Hee</td>
+                                        <td>Corée du Sud</td>
+                                        <td>100 350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>LNami MATSUYAMA<br>Chiharu SHIDA</td>
+                                        <td>Japon</td>
+                                        <td>89 195</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>LIU Sheng Shu<br>TAN Ning</td>
+                                        <td>Chine</td>
+                                        <td>89 181</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>KIM So Yeong<br>KONG Hee Yong</td>
+                                        <td>Corée du Sud</td>
+                                        <td>84 875</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Yuki FUKUSHIMA<br>Sayaka HIROTA</td>
+                                        <td>Japon</td>
+                                        <td>81 905</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>ZHANG Shu Xian<br>ZHENG Yu</td>
+                                        <td>Chine</td>
+                                        <td>81 393</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Mayu MATSUMOTO<br>Wakana NAGAHARA</td>
+                                        <td>Japon</td>
+                                        <td>80 983</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Apriyani RAHAYU<br>Siti Fadia Silva RAMADHANTI</td>
+                                        <td>Indonésie</td>
+                                        <td>73 293</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Jongkolphan KITITHARAKUL<br>Rawinda PRAJONGJAI</td>
+                                        <td>Thaïlande</td>
+                                        <td>72 498</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="article-section" id="section2.4">
+                        <h2>Double mixte</h2>
+                        <p>Le badminton mixte est une discipline passionnante qui met en valeur les compétences individuelles 
+                            ainsi que la coordination et la stratégie d'équipe. Dans cette variante du badminton, les équipes 
+                            sont composées d'un joueur masculin et d'une joueuse féminine, qui doivent travailler ensemble pour 
+                            remporter la victoire. Cette forme de jeu apporte un dynamisme unique au sport, où la vitesse et 
+                            l'agilité se combinent avec la précision et la finesse pour créer un spectacle captivant.
+                            L'une des caractéristiques les plus remarquables du badminton mixte est la diversité des styles de 
+                            jeu qui s'affrontent sur le court. Les hommes apportent souvent une puissance brute à leurs coups, 
+                            tandis que les femmes excellent dans la précision et la défense. Cette complémentarité crée des échanges
+                            de volants palpitants, où chaque coup est méticuleusement planifié pour exploiter les faiblesses de 
+                            l'adversaire tout en minimisant les erreurs.
+                            La stratégie joue un rôle crucial dans le badminton mixte. Les équipes doivent coordonner leurs 
+                            mouvements sur le court, en s'adaptant constamment à la tactique de l'adversaire et en cherchant les 
+                            ouvertures pour marquer des points. La communication entre les coéquipiers est essentielle, car elle 
+                            permet de synchroniser les attaques et les défenses, et de maintenir une pression constante sur 
+                            l'adversaire. Outre les compétences techniques et tactiques, le badminton mixte met également en 
+                            valeur des valeurs telles que le fair-play et le respect. Les joueurs et les joueuses s'affrontent 
+                            dans un esprit de compétition saine, où le respect mutuel est primordial. Cette atmosphère de camaraderie 
+                            et de respect contribue à faire du badminton mixte non seulement un sport compétitif, mais aussi une 
+                            communauté où les joueurs partagent une passion commune pour le jeu.</p>
+                        <div class="tableau">
+                            <h3>Top 10 Double Mixte:</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Classement</th>
+                                        <th>Joueuses</th>
+                                        <th>Nationalié</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>ZHENG Si Wei<br>HUANG Ya Qiong</td>
+                                        <td>Chine</td>
+                                        <td>111 456</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Yuta WATANABE<br>Arisa HIGASHINO</td>
+                                        <td>Japon</td>
+                                        <td>96 591</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>FENG Yan Zhe<br>HUANG Dong Ping</td>
+                                        <td>Chine</td>
+                                        <td>92 800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>SEO Seung Jae<br>CHAE Yu Jung</td>
+                                        <td>Corée du Sud</td>
+                                        <td>89 556</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>JIANG Zhen Bang<br>WEI Ya Xin</td>
+                                        <td>Chine</td>
+                                        <td>86 300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Dechapol PUAVARANUKROH<br>Sapsiree TAERATTANACHAI</td>
+                                        <td>Thaïlande</td>
+                                        <td>82 034</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>KIM Won Ho<br>JEONG Na Eun</td>
+                                        <td>Corée du Sud</td>
+                                        <td>76 637</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>TANG Chun Man<br>TSE Ying Suet</td>
+                                        <td>Hong-Kong</td>
+                                        <td>72 990</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>CHEN Tang Jie<br>TOH Ee Wei</td>
+                                        <td>Malaisie</td>
+                                        <td>66 528</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Mathias CHRISTIANSEN<br>Alexandra BØJE</td>
+                                        <td>Danemark</td>
+                                        <td>66 228</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </article>
+            </div>
+            <div class="right-sidebar" id="right-sidebar">
+                <nav class="table-of-contents">
+                <h2>Sommaire</h2>
+                <ul>
+                    <li><a href="#section2.1">Système de classement</a>
+                    </li>
+                    <li><a href="#section2.2">Classement en Simple</a>
+                    </li>
+                    <li><a href="#section2.3">Classement en double</a>
+                    </li>
+                    <li><a href="#section2.4">Classement en mixte</a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    <div class="transi_box" id="history-transibox"></div> 
+    </main>
+
+
+    <footer id ="bottom-page">
+        <div class="footer-dark">
+            <div class="item text">
+                <h3>A propos</h3>
+                <p>
+                Badminton Info est votre source d'informations fiables sur le monde du badminton. Découvrez les dernières 
+                actualités, conseils, et ressources pour améliorer votre jeu.
+                </p>
+            </div>
+            <div class="item text">
+                <h3>Contact</h3>
+                <p>mathieu.chedas@etu.uca.fr & benoit.dajoux@etu.uca.fr</p>
+            </div>
+            <div class="item text"  >
+                <h3>Rejoignez la communauté FFBad</h3>
+                <div class="icon_box">
+                    <a href="https://www.facebook.com/FederationFrancaiseBadminton/?locale=fr_FR"><img class="social_media_icon" src="../picture/facebook_logo.png" alt="Lien vers la page Facebook de la FFBad"></a>
+                    <a href="https://www.instagram.com/ffbad/?hl=fr"><img class="social_media_icon" src="../picture/instagram_logo.png" alt="Lien vers la page Instagram de la FFBad"></a>
+                    <a href="https://twitter.com/FFBaD?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="social_media_icon" src="../picture/x_logo2.png" alt="Lien vers la page X de la FFBad"></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Badminton Info. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

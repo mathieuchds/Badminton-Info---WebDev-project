@@ -1,0 +1,323 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Header +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+header { /* Style header */
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 130px;
+    z-index: 3;
+}
+
+@media screen and (orientation : portrait) {
+    header {
+        width: 100vw;
+        height: 80px;
+        z-index: 3;
+    }
+}
+
+.header_box { /* Gestion mise en page header*/
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(77, 77, 77) 0%, rgb(41, 41, 41) 20%); 
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+@media screen and (orientation : portrait) {
+    .header_box {
+        position: fixed;
+        height: 80px;
+    }
+}
+
+#nav_progress_bar { /* Progress bar header*/
+    height: 10px;
+    width: 100%;
+    background : #ffffff;
+    top: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+@media screen and (orientation : portrait) {
+    #nav_progress_bar { 
+        position: fixed;
+        top : 80px;
+    }
+}
+
+.main_logo { /* Logo du header */
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 6 / 5;
+}
+
+
+.main_logo_box { /* Gestion taille logo du site et position lien cliquable */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 15%;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 130px;
+    max-height: 130px;
+    aspect-ratio: 6 / 5;
+}
+
+.login_logo_box { /* Gestion taille logo login et position lien cliquable */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 15%;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 130px;
+    max-height: 130px;
+    aspect-ratio: 6 / 5;
+}
+
+
+
+@media screen and (orientation : portrait){
+    .main_logo_box { 
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    .login_logo_box {
+        min-width: 80px;
+        min-height: 80px;
+        max-width: 90px;
+        max-height: 90px;
+    }
+}
+
+.right-header-part { /* Partie droite du header */
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Barre de menu +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.menu {
+    height: 100%;
+}
+
+.menu ul { /* Box menu */
+    margin: 0;
+    padding: 0;
+    position: relative; 
+    height: 100%;
+    align-items:stretch;
+    justify-content: center;
+    display: flex;
+}
+
+.menu ul li { /* Dimensions menu */
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+.menu ul li a { /* Style texte menu */
+    display: block;
+    color: #ffffff;
+    font-family: Roboto;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.menu ul li:hover { /* Survol menu */
+    background-color: rgb(50, 50, 50); 
+    font-size: 1.2em;
+}
+
+.menu ul .sub_menu_box { /* Style sous menu */
+    display: none;
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    height: fit-content; 
+    top: 100%; 
+    left: 0; 
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul .sub_menu_box li { /* Creation sous menu */
+    display: block;
+    padding: 0;
+    z-index: 3;
+    position: relative;
+}
+
+.menu ul .menu_box:hover .sub_menu_box { /* Affichage sous menu */
+    display: block;
+}
+
+.menu ul .sub_menu_box li:hover { /* Survol sous menu */
+    display: block;
+    background-color: rgb(75, 75, 75);
+    height: auto;
+    box-shadow: 2px 2px 2px rgb(16, 16, 16);
+}
+
+@media screen and (orientation : portrait){
+    .menu { /* Masque le menu d'origine */
+        display: none;
+    }
+}
+
+.button_box { /* Cache le bouton menu pour télephone */
+    display: none;
+    }
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Menu adaptation téléphone +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.phone_menu_content { /* Cache le menu pour téléphone */
+        display: none;
+    }
+
+@media screen and (orientation : portrait){
+
+    .button_box {   /* Box qui contient le bouton */
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 15%;
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 70px;
+        max-height: 70px;
+        aspect-ratio: 6 / 5;
+        background-color: rgb(41, 41, 41);
+    }
+    
+    .menu-button {    /* Style du bouton*/
+        color: #ffffff;
+        background-color: transparent;
+        padding: 0;
+        font-size: 1em;
+        font-family: Roboto;
+        border: none;
+        cursor: pointer;
+        height: 100%;
+        
+    }
+    
+    .phone_menu_content { /* Cache le contenu du menu */
+        display: none;
+        position: absolute;
+        background-color: rgb(30, 30, 30);
+        right: 0;
+        top : 100%;
+        width: 35%;
+        height: 100vh;
+    }
+
+    .phone_menu_content .menu { /* Apparition menu */
+        display: block;
+    }
+
+    .accordion-header { /* Element menu*/
+        padding-top: 15px;
+        padding-bottom: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        width: 100%;
+        background-color: rgb(30, 30, 30);
+    }
+
+    .accordion-header .icon-accordion-header { /* Flèche déroulante */
+        width: 20px;;
+        height:32%;
+        opacity:0.75;
+        margin-right: 15px;
+    }
+
+    .accordion-header a { /* Texte élement menu*/
+        color: #ffffff;
+        font-family: Roboto;
+        text-decoration: none;
+        text-align: left;
+        margin-left: 10px;
+    }
+    
+    .accordion-content { /* Style sous menu */
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: rgb(23, 23, 23);
+        display: none;
+    }
+
+    .accordion-content a { /* Style texte sous-menu */
+        text-decoration: none;
+        color: #ffffff;
+        font-family: Roboto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .accordion-content :nth-child(2n) {
+        background-color: rgb(18, 18, 18);
+    }
+
+    .accordion-content :last-child {
+        padding-bottom: 0;
+    }
+
+    .accordion-content :first-child {
+        padding-top: 0;
+    }
+    
+    .accordion-content.active { /* Apparition sous menu */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overlay { /* Filtre sombre */
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 65%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1000; 
+        display: none; 
+    }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Fond d'écran +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+main { /* Fond de base */
+    background-color:#6f7479;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    width: 100vw;
+}
+
+main.background-image { /* Fond avec image */
+    background-image: url(../picture/volant.jpg);
+}

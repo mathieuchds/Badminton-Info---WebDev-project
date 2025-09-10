@@ -1,0 +1,238 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Partie contenu history.html +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+body {
+    overflow-x: hidden;
+}
+
+.article-main { /* Organisation page principale */
+    display: flex;
+    background-color: rgb(30, 30, 30);
+}
+
+.banner { /* Bannière de haut de page */
+    height: calc(100px + 20vh);; 
+    background-image: url('../picture/test.jpg'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;   
+}
+
+@media screen and (orientation : portrait){
+    .banner {
+        height: calc(100px + 5vh);
+    }
+}
+
+#right-sidebar { /* Barre latérale interactive */
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    width: 30%;
+    position: fixed;
+    top: 130px;
+    right: 0;
+    z-index: 1;
+    bottom : 0;
+}
+
+@media screen and (orientation : portrait){
+    #right-sidebar {
+        display: none;
+    }
+}
+
+.main-content { /* Dimension contenu principal */
+    display: block;
+    width: 70%;
+}
+
+@media screen and (orientation : portrait){
+    .main-content {
+        width: 100%;
+    }
+}
+
+.table-of-contents { /* Style barre latérale */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+.table-of-contents * { /* Elements barre latérale */
+    font-family: Roboto;
+    color: #ffffff;
+}
+    
+.table-of-contents ul { /* Masque le style par défaut */
+    list-style-type: none;
+    padding: 0;
+    }
+    
+.table-of-contents li { /* */
+    margin-bottom: 5px;
+}
+    
+.table-of-contents a { /* Titre de partie barre latérale */
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+    
+.table-of-contents li.active a { /* Titre de partie active barre latérale */
+    font-weight: bold;
+    font-size: 1.4em;
+    color: rgb(216, 151, 0)
+}
+
+.table-of-contents li.active p { /* Apparition infos supplémentaires barre latérale */
+    font-weight: lighter;
+    font-size: 1.2em;
+    color: #b5b5b5;
+    display: block;
+    text-align: left;
+    margin : 0;
+    margin-top : 0.4em;
+    margin-bottom : 0.4em;
+}
+
+.table-of-contents li p { /* Infos supplémentaires barre latérale */
+    font-weight: lighter;
+    font-size: 0.8em;
+    display: none;
+    color: #5d5d5d;
+}
+/*
+.table-of-contents strong { 
+    font-weight: lighter;
+    text-decoration: underline;
+    color: #5d5d5d;
+}*/
+
+.main-content-article { /* Contenu principal de la page */ 
+    width: 100%;
+    padding-bottom: 1em;
+    background-color: rgb(56, 56, 56);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content-article h1 { /* Titre principal */
+    font-size: 4em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 1em;
+    padding: 5%;
+    margin: 0;
+}
+
+@media screen and (orientation : portrait){
+    .main-content-article h1 {
+        font-size: 2em;
+    }
+}
+
+.main-content-article h2{ /* Titre de partie */
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 1em;
+    padding-left: 5%;
+}
+
+@media screen and (orientation : portrait){
+    .main-content-article h2 {
+        font-size: 1.5em;
+    }
+}
+
+.main-content-article *{ /* Style texte de base */
+    color: #ffffff;
+    font-family: Roboto;
+}
+
+.article-section p {  /* Ajustement paragraphe */
+    font-size: 1.5em;
+    text-indent: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 0;
+    text-align: justify;
+}
+
+ul.article-info {
+    font-size: 1.5em;
+    text-indent: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 0;
+    text-align: justify;
+}
+
+ul.article-info li{
+    padding-bottom: 15px;
+}
+
+@media screen and (orientation : portrait){
+    .article-section p {
+        font-size: 1em;
+    }
+}
+
+.article-section { /* Gestion section */
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+}
+
+.article-section strong { /* Mots clés paragraphe */
+    font-weight: 600;
+    color:  rgb(248, 174, 0);
+}
+
+.article-section span { /* Mots langues étrangères/légende de photo */
+    font-style: italic;
+    color: #dcdcdc;
+}
+
+.history-fig { /* Gestion position photo */
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.history-fig img { /* Taille photo */
+    width: 80%;
+}
+
+.history-fig figcaption { /* Légende photo */
+    padding: 5%;
+    text-align: center;
+    font-style: italic;
+    color: #dcdcdc;
+}
+
+#history-transibox { /* Box transition main/footer */
+    z-index: 3;
+}
+
+@media screen and (orientation : portrait){
+    #history-transibox { 
+        z-index: 1;
+    }
+}

@@ -1,0 +1,139 @@
+body {
+    margin : 0;
+}
+
+#right-sidebar { /* Redéfinition taille du menu */
+    width : 20%;
+}
+
+.main-content { /* Redéfinition taille de la page principale */
+    width: 80%;
+}
+
+#form { /* Formulaire */
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.forum-head { /* ENcart d'envoi de message */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding : 20px;
+}
+
+#msg-area { /* Zone d'écriture du message à envoyer */
+    width: 87%;
+    border : none;
+    border-bottom: 4px solid rgb(248, 174, 0);;
+    padding: 0;
+    height: 80px;
+    background-color:rgb(56, 56, 56);
+    outline: none;
+    font-family: Roboto;
+    font-size: 25px;
+    color: #999; 
+}
+
+input::placeholder { /* Texte du placeholder */
+    font-size: 25px; 
+    color: #999; 
+}
+
+.send-button-box {   /* Box qui contient le bouton */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 10%;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 70px;
+    max-height: 70px;
+    aspect-ratio: 6 / 5;
+    background-color:rgb(56, 56, 56);
+}
+
+.send-button {    /* Style du bouton*/
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+#out { /* Alerte message envoyé */
+    font-size: 1em;
+    padding: 5px;
+    font-family: Roboto;
+    color: #999; 
+}
+
+#output {
+    display: block;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.block-message {
+    background-color:rgb(36, 36, 36);
+    margin-bottom: 40px;
+}
+
+.info-message {
+    display: flex;
+    font-size: 1em;
+    font-family: Roboto;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.nom {
+    font-weight: bold;
+    padding-right: 25px;
+    margin: 0;
+}
+
+.date, .heure {
+    font-size: 0.8em;
+    font-weight: lighter;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.message { /* Message envoyé */
+    text-align: left;
+    font-size: 1em;
+    padding: 10px;
+    margin : 0;
+    max-width: 980px;
+    overflow: hidden;
+}
+
+.introduction {
+    font-style: italic;
+    font-size: 1.3em;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 0;
+    max-width: 800px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 1em;
+    padding-left: 5%;
+}
+
+li.active p .club-link {
+    font-size: 0.8em;
+    display: none;
+    color: #eeeeee;
+    display: block;
+}

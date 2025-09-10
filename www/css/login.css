@@ -1,0 +1,47 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Login +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+form#loginform { /* Dimentions cases login */
+    padding : 2.5%;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-box { /* Box login */
+    display: flex; 
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+main { /* Image de fond */
+    background-image: url("../picture/volant.jpg");
+}
+
+body {
+    background-color: rgb(41, 41, 41);
+}
+
+p.form-text { /* Style du message d'accès au register */
+    color : rgb(41, 41, 41);
+    font-family: Roboto;
+}
+
+a { /* Enlève le soulignage du lien */
+    text-decoration: none;
+}
+
+#output { /* Style du message de bienvenu */
+    color : rgb(255, 179, 0);
+    font-size: 6em;
+    font-family: Roboto;
+    display: none; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}

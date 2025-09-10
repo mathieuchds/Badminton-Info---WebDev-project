@@ -1,0 +1,112 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Partie contenu competition.html +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+div.tableau { /* Box tableau */
+    margin: 20px;
+    max-width: 800px;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 { /* Titre de tableau */
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+@media screen and (orientation : portrait){
+    h3 {
+        font-size: 1.25em;
+    }    
+}
+
+section.article-section { 
+    align-items: center;
+}
+
+table { /* Style du tableau */
+    z-index: 1; 
+    border-collapse: collapse;
+    border: 0.2vh solid rgb(0, 0, 0);
+    font-family: sans-serif;
+    padding: 2px 2px;
+    margin-bottom: 10%;
+}
+
+th{
+    background: rgba(0,0,0,0);
+    color: #FFFFFF;
+    border: 0.2vh solid rgb(255, 255, 255);
+    text-align: center;
+}
+
+tr:nth-child(even) { /* Alterne une couleur/2 dans le tableau */
+    background: #292525;
+}
+
+tr:nth-child(odd) {
+    background: #464242;
+}
+
+td {
+    border: 0.2vh solid rgb(255, 255, 255);
+    padding: 2px 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #FFF;
+    text-align: center;
+}
+
+.National-color {
+    background-color: red;
+    border: 0.2vh solid rgb(255, 255, 255);
+    color: #000000;
+}
+
+.Regional-color {
+    background-color: rgb(87, 108, 230);
+    border: 0.2vh solid rgb(255, 255, 255);
+    color: #000000;
+}
+
+.Departemental-color {
+    background-color: rgb(44, 250, 25);
+    border: 0.2vh solid rgb(255, 255, 255);
+    color: #000000;
+}
+
+.Promotion-color {
+    background-color: rgb(255, 238, 0);
+    border: 0.2vh solid rgb(255, 255, 255);
+    color: #000000;
+}
+
+.tableau.phone {
+    display: none;
+}
+
+@media screen and (orientation : portrait){
+    .tableau.landscape-only {
+        display: none;
+    }
+    .tableau.phone {
+        display: block;
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .tableau.landscape-only {
+        display: none;
+    }
+    .tableau.phone {
+        display: block;
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    .tableau {
+        font-size: 0.7em;
+    }
+}

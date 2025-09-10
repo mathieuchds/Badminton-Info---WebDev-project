@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr" xml:lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mathieu Chedas, Benoit Dajoux">
+    <meta name="keywords" content="badminton, html, français">
+    <meta name="description" content="Site d'information sur l'univers du badminton.">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Badminton Info</title>
+    <link rel="icon" href="picture/logo_site.png" type="image/icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="./js/menu_button.js" defer></script>
+    <script src="./js/accordion_menu.js" defer></script>
+    <script src="./js/table-of-content.js" defer></script>
+    <script src="./js/progressbar.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header_box">
+            <a href="./index.html" class="main_logo_box"><img class="main_logo" src="picture/logo_site.png" alt="Logo du site"></a>
+            
+            <div class="right-header-part">
+                <a href="html/login.html" class="main_logo_box"><img class="main_logo" src="picture/logo_profil.png" alt="Acces login"></a>
+                
+                <div class="button_box">
+                    <button id="menuButton" class="button_box"><img class="main_logo" src="picture/menu_icon.png" alt="Accès menu"></button>
+                </div>
+
+                    <div id="menuContent" class="phone_menu_content">
+                        <nav class="menu">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="html/history.html">Historique</a><img class="icon-accordion-header" src="picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="html/history.html#section1.1">Introduction</a>
+                                        <a href="html/history.html#section1.2">Origines</a>
+                                        <a href="html/history.html#section1.3">Emergence</a>
+                                        <a href="html/history.html#section1.4">Arrivée aux J.O</a>
+                                        <a href="html/history.html#section1.5">Le badminton moderne</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="html/competition.html">Scène compétitive</a><img class="icon-accordion-header" src="picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="html/competition.html#section2.1">Introduction</a>
+                                        <a href="html/competition.html#section2.2">Simple</a>
+                                        <a href="html/competition.html#section2.3">Double</a>
+                                        <a href="html/competition.html#section2.4">Mixte</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="html/forum.html">Notre expérience</a><img class="icon-accordion-header" src="picture/icon_arrow.png" alt="Affiche sous menu">
+                                    </div>
+                                    <div class="accordion-content">
+                                        <a href="html/forum.html#section3.1">Mathieu</a>
+                                        <a href="html/forum.html#section3.2">Benoit</a>
+                                        <a href="html/forum.html#section3.3">Votre experience</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                
+                
+                <nav class="menu">
+                    <ul>
+                        <li class="menu_box">
+                            <a href="html/history.html">Historique</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="html/history.html#section1.1">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="html/history.html#section1.2">Origines</a>
+                                </li>
+                                <li>
+                                    <a href="html/history.html#section1.3">Emergence</a>
+                                </li>
+                                <li>
+                                    <a href="html/history.html#section1.4">Arrivée aux J.O</a>
+                                </li>
+                                <li>
+                                    <a href="html/history.html#section1.5">Le badminton moderne</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_box">
+                            <a href="html/competition.html">Scène compétitive</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="html/competition.html#section2.1">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="html/competition.html#section2.2">Simple</a>
+                                </li>
+                                <li>
+                                    <a href="html/competition.html#section2.3">Double</a>
+                                </li>
+                                <li>
+                                    <a href="html/competition.html#section2.4">Mixte</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu_box">
+                            <a href="html/forum.html">Notre expérience</a>
+                            <ul class="sub_menu_box">
+                                <li>
+                                    <a href="html/forum.html#section3.1">Mathieu</a>
+                                </li>
+                                <li>
+                                    <a href="html/forum.html#section3.2">Benoit</a>
+                                </li>
+                                <li>
+                                    <a href="html/forum.html#section3.3">Votre experience</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="nav_progress_bar"></div>
+
+    </header>
+
+    <main class="background-image">
+        <div class="overlay" id="overlay"></div>
+        <div class="sidebar">
+            <h1>Badminton info</h1>
+            <h2>Bienvenue sur Badminton info : Votre destination badminton</h2>
+            <p>
+            Découvrez l'histoire, les résultats et échangez avec d'autres passionnés dans notre forum dédié au badminton et plongez dans les 
+            origines fascinantes de ce sport dynamique.
+            </p>
+            <p>
+            Restez à jour avec les derniers résultats des compétitions majeures. De la prestigieuse All England Open aux Jeux Olympiques,
+            nous vous tenons informés des performances des meilleurs joueurs et des moments forts de chaque tournoi. Que vous soyez un fan 
+            inconditionnel ou un joueur en herbe, vous trouverez ici tout ce que vous devez savoir sur le monde compétitif du badminton. <br>
+            Rejoignez notre communauté animée de passionnés de badminton. Posez des questions, partagez des conseils et discutez des derniers 
+            matchs avec d'autres membres. Que vous soyez un débutant cherchant des conseils pour améliorer votre jeu ou un vétéran partageant 
+            votre expertise, notre forum est l'endroit idéal pour interagir avec d'autres amateurs de badminton.
+            </p>
+        </div>
+        <div class="transi_box" id="index"></div> 
+    </main>
+
+    <footer>
+        <div class="footer-dark">
+            <div class="item text">
+                <h3>A propos</h3>
+                <p>
+                Badminton Info est votre source d'informations fiables sur le monde du badminton. Découvrez les dernières 
+                actualités, conseils, et ressources pour améliorer votre jeu.
+                </p>
+            </div>
+            <div class="item text">
+                <h3>Contact</h3>
+                <p>mathieu.chedas@etu.uca.fr & benoit.dajoux@etu.uca.fr</p>
+            </div>
+            <div class="item text"  >
+                <h3>Rejoignez la communauté FFBad</h3>
+                <div class="icon_box">
+                    <a href="https://www.facebook.com/FederationFrancaiseBadminton/?locale=fr_FR"><img class="social_media_icon" src="picture/facebook_logo.png" alt="Lien vers la page Facebook de la FFBad"></a>
+                    <a href="https://www.instagram.com/ffbad/?hl=fr"><img class="social_media_icon" src="picture/instagram_logo.png" alt="Lien vers la page Instagram de la FFBad"></a>
+                    <a href="https://twitter.com/FFBaD?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="social_media_icon" src="picture/x_logo2.png" alt="Lien vers la page X de la FFBad"></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Badminton Info. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

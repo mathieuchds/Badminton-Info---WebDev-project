@@ -1,0 +1,98 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Partie contenu index.html +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.sidebar h1 { /* Titre principal */
+    font-size: 7vw;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    line-height: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    margin: 0;
+}
+
+@media screen and (orientation : portrait){
+    .sidebar h1 { 
+        font-size:calc(20px + 8vw);
+        font-weight: 400;
+        width: 100%;
+        text-align: left;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        line-height: 1em;
+        padding: 0%;
+        padding-top: 10%;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.sidebar h2{ /* Titre secondaire */
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    line-height: 1em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+}
+
+@media screen and (orientation : portrait){
+    .sidebar h2{ /* Titre secondaire */
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        line-height: 1em;
+        padding-right: 0.5em;
+        padding-top: 0.5em;
+    }
+}
+
+.sidebar { /* Barre latérale transparente */ 
+    width: 40%;
+    height: 100%;
+    padding-bottom: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (orientation : portrait){
+    .sidebar { /* Barre latérale transparente */ 
+        width: 100%;
+        height: 100%;
+        padding-bottom: 1em;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+}
+
+.sidebar *{ /* Contenu de la barre latérale */
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #ffffff;
+    font-family: Roboto;
+}
+
+.sidebar p {   /* Paragraphe barre latérale */
+    font-size: 1.5em;
+    text-indent: 1em;
+    padding: 0.5em;
+    text-align: justify; /* Justification du texte */
+    word-spacing: -2px;
+}
+
+@media screen and (orientation : portrait){
+    .sidebar p {   /* Paragraphe barre latérale */
+        font-size: 1em;
+        text-indent: 1em;
+        padding: 0.5em;
+        text-align: justify; /* Justification du texte */
+        word-spacing: -2px;
+    }
+}
+
+#index { /* Profondeur de la transibox */
+    z-index: 1;
+}
