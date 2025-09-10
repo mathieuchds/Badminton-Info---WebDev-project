@@ -26,12 +26,12 @@ The website includes a messaging/forum system and an integrated account registry
 ├── templates  
 ├── data  
 ├── httpd.py -> python server  
-└── www  
-    ├── index.html  
-    ├── css/  
-    ├── js/  
-    ├── picture/  
-    └── htbin/ 
+└── www 
+    &nbsp;├── index.html  
+    &nbsp;├── css/  
+    &nbsp;├── js/  
+    &nbsp;├── picture/  
+    &nbsp;└── htbin/ 
 
 
 ## How to Run the Project
