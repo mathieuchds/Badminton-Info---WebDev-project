@@ -52,7 +52,7 @@ On Windows, use the command:
     
     python httpd
 
-    instead of ./httpd in the command prompt.
+instead of ./httpd in the command prompt.
 
 ## Author
 
