@@ -22,7 +22,7 @@ The website includes a messaging/forum system and an integrated account registry
 
 ## Project Structure
 
-/root
+/root  
 ├── templates  
 ├── data  
 ├── httpd.py -> python server  
